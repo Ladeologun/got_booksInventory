@@ -11,8 +11,6 @@ interface Iprops{
     isbn:string
 }
 
-
-
 const BookCard:React.FC<Iprops>=({index,authors,name,numpages,country,date,pub,isbn})=>{
 
     return(

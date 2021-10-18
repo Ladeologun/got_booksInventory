@@ -75,10 +75,9 @@
   text-align: left;
 }
 #searchForm {
-  /* width: 100%; */
+ 
   display: flex;
   justify-content:center;
-  /* border: 1px solid red; */
   margin:0 auto;
   width:70%
 }
@@ -106,8 +105,6 @@
   margin-right: 10%;
   color:black;
   font-weight:bold;
-  /* border: 1px solid black; */
-  /* width: 20%; */
   display: flex;
   justify-content: flex-start;
 }
@@ -125,12 +122,10 @@
 .info{
   padding: 0px;
   margin: 0px;
-  /* border: 1px solid black; */
 }
 .searchby{
   padding: 0px;
   margin: 0px;
-  /* border: 1px solid black; */
   margin-top: -1rem;
   margin-bottom: 2%;
 }
