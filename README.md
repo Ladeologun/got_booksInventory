@@ -1,5 +1,9 @@
 # got_booksInventory
-A book inventory application using ANAPIOFICEANDFIRE API, in ReactJS (Typescript).
+A book inventory application using ANAPIOFICEANDFIRE API, in ReactJS (Typescript). This application displays all the books available in the API and implements search functions where a user can search a book by any of authors,publishers,name,enddate,ISBN.
+
+# Requirements
+For development, you will only need Node.js and a node global package, npm, installed in your environement.
+
 
 # Getting Started
 To run this application locally:
