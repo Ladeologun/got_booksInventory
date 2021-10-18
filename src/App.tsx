@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { useState } from "react"
+import SearchCard from './components/SearchCard'
+import Book from "./components/Books"
+import Header from "./components/Header"
+
 
 function App() {
+  const [searchValue, setSearchValue] = useState("")
+  const [searchTag, setSearchTag] = useState("")
+
+  const handleSubmit = (input:string, tag:string):void => {
+    setSearchValue(input)
+    setSearchTag(tag)
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <SearchCard handleSubmit={handleSubmit} />
+      <Book searchValue={searchValue} searchTag={searchTag}/>
     </div>
   );
 }
 
 export default App;
+
